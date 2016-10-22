@@ -1,0 +1,20 @@
+{
+  "name": "drawingapp",
+  "homepage": "https://github.com/Zippoffer/drawingapp",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.5.8"
+  }
+}
