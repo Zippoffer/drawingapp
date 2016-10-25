@@ -25,9 +25,36 @@ angular
 			})
 	})
 
-
+// drawingboard stuff \\
 													
   .controller('DrawCtrl', function ($scope, $http) {
+
+			console.log('canvas', canvas)
+			let board = new DrawingBoard.Board('canvas',{
+					background: "#ffffff",
+		    color: "#000000",
+		    size: 1,
+		controls: [
+	        { Size: { type: "range" } },
+	        { Navigation: { back: true, forward: true } },
+	        'DrawingMode',
+	        'Color',
+	        'Download',
+
+    ],
+    webStorage: 'local'
+
+			})
+
+			// var downloadControl = new DrawingBoard.Control.Download(board).addToBoard();
+			// var colorPicker = new DrawingBoard.Control.Color(board).addToBoard();
+			console.log('board',board)
+		
+			
+			console.log('boardimg',board.getImg())
+
+// drawingboard stuff \\
+
     $scope.sendCanvi = () => {
       const canvi = {
       	Object:      	$scope.id,
@@ -54,101 +81,137 @@ angular
 				console.log(canviId)    
 			}
 
+
   })
-// canvas stuff
 
 
-// window.onLoad=function(){
-//     var canvas=document.getElementById('canvas');
-        
 
 
-// };
 
-var e = new function canvasLayer(location, id) {
-let canvas = $('#canvas')
-// let canvas = document.getElementById('#canvas')
 
-console.log('canvas',canvas)
-console.log('1')
-console.log('this', this)
-    this.width = $(window).width();
-    this.height = $(window).height();
-    this.element = document.createElement('canvas');
-console.log('2')
-    $(this.element)
-       .attr('id', id)
-       .text('unsupported browser')
-       .width(this.width)
-       .height(this.height)
-       .appendTo(location);
 
-    this.context = this.element.getContext("2d");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// canvas stuff \\
+
+// var e = new function canvasLayer(location, id) {
+// let canvas = $('#canvas')
+// // let canvas = document.getElementById('#canvas')
+
+//     this.width = $(window).width();
+//     this.height = $(window).height();
+//     this.element = document.createElement('canvas');
+//     $(this.element)
+//        .attr('id', id)
+//        .text('unsupported browser')
+//        .width(this.width)
+//        .height(this.height)
+//        .appendTo(location);
+
+//     this.context = this.element.getContext("2d");
+// // }
+
+// // var context = canvas.get[0].getContext("2d");
+// // let context = canvas.getContext('2d')
+// let context = this.context//canvas.getContext('2d')
+// let radius = 5;
+// let dragging = false;
+// context.lineWidth = radius*2
+
+// let putPoint = (e)=>{
+// 	if(dragging){
+// 	context.lineTo(e.offsetX, e.offsetY)
+// 	context.stroke()
+// 	context.beginPath()
+// 	context.arc(e.offsetX, e.offsetY, radius, 0, Math.PI*2)
+// 	context.fill()
+// 	context.beginPath()
+// 	context.moveTo(e.offsetX, e.offsetY)
+// 	}
 // }
 
-// var context = canvas.get[0].getContext("2d");
-// let context = canvas.getContext('2d')
-let context = this.context//canvas.getContext('2d')
-let radius = 5;
-let dragging = false;
-context.lineWidth = radius*2
 
-let putPoint = (e)=>{
-	if(dragging){
-	context.lineTo(e.offsetX, e.offsetY)
-	context.stroke()
-	context.beginPath()
-	context.arc(e.offsetX, e.offsetY, radius, 0, Math.PI*2)
-	context.fill()
-	context.beginPath()
-	context.moveTo(e.offsetX, e.offsetY)
-	}
-}
+// let engage = (e)=>{
+// 	dragging = true
+// 	putPoint(e)
+// 	// console.log('e',e)
+// }
 
-console.log('context',context)
-console.log('4')
+// let disengage = ()=>{
+// 	dragging = false
+// 	context.beginPath()
+// }
 
-let engage = (e)=>{
-	dragging = true
-	putPoint(e)
-	console.log('e',e)
-}
+// $(engage).mousedown(function(e) {
+//   console.log('mousedown')
+//   // console.log('e',e)
+// // console.log('this', this)
+// });
 
-let disengage = ()=>{
-	dragging = false
-	context.beginPath()
-}
+// $( putPoint).click(function(e) {
+//   $( "#canvas" ).mousemove();
+// });
 
-$(engage).mousedown(function(e) {
-  console.log('mousedown')
-  console.log('e',e)
-});
-
-$( putPoint).click(function(e) {
-  $( "#canvas" ).mousemove();
-});
-
-$( disengage ).mouseup(function() {
-  console.log('mouseup')
-});
+// $( disengage ).mouseup(function() {
+//   console.log('mouseup')
+// });
 
 
-// $( '#canvas').click(function() {
+// let testing = $('#canvas');
+// console.log("testing",testing);
+
+// $('#canvas').click(function() {
 //   console.log("I was clicked!");
 // });
 
-// $( canvas).click(function() {
-//   console.log("I was clicked!");
-// });
-
-let testing = $('#canvas');
-console.log("testing",testing);
-// console.log('canvas',canvas)
-// canvas.addEventListener('mousedown', engage)
-// canvas.addEventListener('mousemove', putPoint)
-// canvas.addEventListener('mouseup', disengage)
-// console.log('5')
-}
+// }
 
 
 
