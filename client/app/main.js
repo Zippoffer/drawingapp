@@ -39,7 +39,7 @@ angular
 	        { Navigation: { back: true, forward: true } },
 	        'DrawingMode',
 	        'Color',
-	        'Download',
+	        // 'Download',
 
     ],
     webStorage: 'local'
