@@ -1,0 +1,28 @@
+<h1 class="rabbit">yep</h1>
+
+
+
+<hr/>
+
+<div class="container">
+	
+
+<div ng-repeat="pic in pics">
+
+	<img ng-src="{{pic.draw}}" alt="">
+
+	<li><br><a class="btn btn-danger" ng-click="remove(pic._id, $index)">Delete</a>
+	</li>
+
+</div>
+
+</div>
+
+<a class='btn btn-primary' href="/#/canvi">go back</a>
+
+
+
+
+<!-- <ul>
+	<li ng-repeat="canvi in canvis"><br><a class="btn btn-danger" ng-click="remove(canvi._id, $index)">Delete</a>  <a class="btn btn-success" ng-click="update(canvi)">Update</a></li>
+</ul> -->
