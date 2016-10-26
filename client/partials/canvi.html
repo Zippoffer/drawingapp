@@ -5,69 +5,21 @@
 
 <!-- canvas stuff -->
 <form ng-submit="sendCanvi()">
-<div id="canvas" height="400" width="200"></div>
+<div ng-model="draw" id="canvas" height="400" width="200"></div>
 	<!-- <canvas ng-model="draw" id="canvas"  width="300" height="300" ng-click = "clickHandler($event)"></canvas> -->
 
 	
-	<input type="submit">
+<input type="submit">
 </form>
 <hr/>
-<ul>
-	<li ng-repeat="canvi in canvis">your drawing: {{canvi.job}}<br><a class="btn btn-danger" ng-click="remove(canvi._id, $index)">Delete</a>  <a class="btn btn-success" ng-click="update(canvi)">Update</a></li>
-</ul>
+<!-- <ul>
+	<li ng-repeat="canvi in canvis"><br><a class="btn btn-danger" ng-click="remove(canvi._id, $index)">Delete</a>  <a class="btn btn-success" ng-click="update(canvi)">Update</a></li>
+</ul> -->
 
 </div>
 
-<a class='btn btn-primary' href="/#/">go back from whence ye came</a>
+<div>
+	<h1>this is the end</h1>
+</div>
+<a class='btn btn-primary' href="/#/pic">check out your drawings</a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<h1>Rabbit Skin Glue</h1>
-
-<canvas id="canvas" "></canvas>
-
-
-<form ng-submit="sendList()">
-	<input type="text" ng-model="job" placeholder="job to do" required>
-	<input type="text" ng-model="description" placeholder="when to do it!" />
-	
-	<input type="submit">
-</form>
-<hr/>
-<ul>
-	<li ng-repeat="list in lists">You've gotta {{list.job}} <br> at {{list.description}}<br><a class="btn btn-danger" ng-click="remove(list._id, $index)">Delete</a>  <a class="btn btn-success" ng-click="update(list)">Update</a></li>
-</ul>
-
-
-
-<a class='btn btn-primary' href="/#/">go back from whence ye came</a>
-
- -->
