@@ -2,24 +2,17 @@
 
 <div class="container">
 	
+	<form ng-submit="sendCanvi()">
+		<div ng-model="draw" id="canvas" height="400" width="200"></div>
+		
+		<input type="image" src="/lib/css/images/arrow-158359_1280.png">
+	</form>
 
-<!-- canvas stuff -->
-<form ng-submit="sendCanvi()">
-<div ng-model="draw" id="canvas" height="400" width="200"></div>
-	<!-- <canvas ng-model="draw" id="canvas"  width="300" height="300" ng-click = "clickHandler($event)"></canvas> -->
-
-	
-<input type="submit">
-</form>
-<hr/>
-<!-- <ul>
-	<li ng-repeat="canvi in canvis"><br><a class="btn btn-danger" ng-click="remove(canvi._id, $index)">Delete</a>  <a class="btn btn-success" ng-click="update(canvi)">Update</a></li>
-</ul> -->
 
 </div>
 
-<div>
-	<h1>this is the end</h1>
-</div>
-<a class='btn btn-primary' href="/#/pic">check out your drawings</a>
+<div class="space"></div>
+
+<a class='btn btn-primary' href="/#/pic">to gallery</a>
+
 

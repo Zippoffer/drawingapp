@@ -5,11 +5,11 @@ angular
 	.module('drawingApp', ['ngRoute'])
 	.config($routeProvider =>
 		$routeProvider
+			// .when('/', {
+			// 	controller: 'MainCtrl',
+			// 	templateUrl: 'partials/main.html'
+			// })
 			.when('/', {
-				controller: 'MainCtrl',
-				templateUrl: 'partials/main.html'
-			})
-			.when('/canvi', {
 				controller: 'DrawCtrl',
 				templateUrl: 'partials/canvi.html'
 			})
@@ -19,13 +19,13 @@ angular
 			})
 		)
 
-	.controller('MainCtrl', function ($scope, $http) {
-		$http
-			.get('/api/title')
-			.then(({data: {title}}) => {
-				$scope.title = title
-			})
-	})
+	// .controller('MainCtrl', function ($scope, $http) {
+	// 	$http
+	// 		.get('/api/title')
+	// 		.then(({data: {title}}) => {
+	// 			$scope.title = title
+	// 		})
+	// })
 
 
 //////////showCtrl\\\\\\\\\\\\\
@@ -45,7 +45,8 @@ angular
 				$http
 				.post('/api/remove', {picId})
 				.then(() => $scope.pics.splice(index, 1))
-				console.log('picId',picId)    
+				console.log('picId',picId) 
+				console.log('index', index)   
 			}
  })
 ///////////showCtrl\\\\\\\\\\\\\\\
@@ -77,16 +78,16 @@ angular
 			const img = board.getImg()
 			const imgInput = (board.blankCanvas === img) ? '' : img;
       const canvi = {
-      	// Object:      	img,
+
       	Object:      	$scope.id,
         draw: 				imgInput,        
       }
-      // console.log('id', canvi)
+
       $http
         .post('/api/canvis', canvi)
         .then(() =>  $scope.canvis.push(canvi))
         .catch(console.error)
-			// console.log('img', img)
+
     }
 
 	    $http
@@ -95,15 +96,6 @@ angular
 	        $scope.canvis = canvis
 	      )
 	   
-			// $scope.remove = (canviId, index) => { 
-			// 	$http
-			// 	.post('/api/remove', {canviId})
-			// 	.then(() => $scope.canvis.splice(index, 1))
-			// 	console.log('canviId',canviId)    
-			// }
-
-    console.log('board', board)
-
   })
  
 
