@@ -1,0 +1,181 @@
+body {
+	color: black;
+}
+h1 {
+	text-align: center;
+}
+
+.drawing-board-control-drawingmode-pencil-button {
+	background: url('/css/images/Pencil_icon.png');
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-drawingmode-eraser-button {
+	background: url(/css/images/2000px-Pink-eraser.svg.png);
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-drawingmode-filler-button {
+	background: url(/css/images/bucket-157513_960_720.png);
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+/*test*/
+
+.drawing-board-canvas-wrapper {
+	height: 100%;
+	width: 100%;
+}
+.drawing-board-canvas {
+	position: relative;
+	bottom: 50px;
+	height: 400px;
+	width: 1000px;
+}
+
+.container {
+	width: 1000px;
+	height: 100%;
+	background: url(/css/images/darkcanvas.jpg);
+	background-size: cover;
+	border: 3px solid black;
+}
+.container.ng-scope {
+	max-width: 900px;
+	border: 3px solid black;
+}
+
+/*test*/
+
+.btn.btn-primary.ng-scope {
+	position: relative;
+	left: 82px;
+	margin-bottom: 6%;
+}
+
+
+/*test*/
+input {
+	/*margin-: -13%;*/
+	position: fixed;
+	top: 79px;
+	left: 399px;
+	background: url(/css/images/arrow-158359_1280.png);
+	background-size: cover;
+	height: 30px;
+	width: 30px;
+	border-radius: 200%;
+	text-rendering: unset;
+}
+/*test*/
+
+.ng-binding.ng-scope {
+	position: relative;
+	left: 30px;
+}
+
+/*test*/
+.drawing-board-control-size-range-input {
+	position: relative;
+	left: 1px;
+	top: 130px;
+}
+
+.drawing-board-control.drawing-board-control-navigation {
+	position: relative;
+	left: 29px;
+	bottom: 42px;
+}
+
+.drawing-board-control.drawing-board-control-drawingmode {
+	position: relative;
+	left: 122px;
+	bottom: 66px;
+}
+
+.drawing-board-control-colors-current{
+	position: relative;
+	bottom: 26px;
+	height: 22px;
+	width: 22px;
+	border: 1px solid red;
+}
+
+.drawing-board-control-inner {
+	position: relative;
+	bottom: 62px;
+}
+/*test*/
+
+
+.drawing-board-canvas {
+	margin-top: 3%;
+}
+
+
+.drawing-board-control-colors-rainbows.drawing-board-utils-hidden{
+	overflow: hidden;
+	display: none;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-colors-rainbow{
+	height: 30px;
+	width: 30px;
+	display: inline;
+}
+
+.drawing-board-control-colors-picker{
+	height: 22px;
+	width: 22px;
+	display: inline-block;
+}
+
+.btn.btn-danger {
+	position: relative;
+	left: 99px;
+	margin-bottom: 6%;
+	background: url(/css/images/delete-300x300.jpg);
+	background-size: cover;
+	height: 62px;
+	width: 62px;
+	border-radius: 200%;
+}
+
+/*test*/
+.btn.btn-primary.ng-scope {
+	position: fixed;
+	left: 600px;
+	top: 672px;
+	/*margin-top: 3%;*/
+	background: url(/css/images/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png);
+	background-size: cover;
+}
+.btn.btn-primary {
+		position: relative;
+	left: 400px;
+	top: 42px;
+	/*margin-top: 3%;*/
+	background: url(/css/images/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png);
+	background-size: cover;
+}
+/*test*/
+
+img {
+	margin-top: 6%;
+}
+
+.space {
+	height: 59px;
+}
+.rabbit {
+	color: #badca7;
+}
+
