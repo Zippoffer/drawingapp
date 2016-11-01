@@ -5,10 +5,7 @@ angular
 	.module('drawingApp', ['ngRoute'])
 	.config($routeProvider =>
 		$routeProvider
-			// .when('/', {
-			// 	controller: 'MainCtrl',
-			// 	templateUrl: 'partials/main.html'
-			// })
+	
 			.when('/', {
 				controller: 'DrawCtrl',
 				templateUrl: 'partials/canvi.html'
@@ -18,14 +15,6 @@ angular
 				templateUrl: 'partials/pic.html'
 			})
 		)
-
-	// .controller('MainCtrl', function ($scope, $http) {
-	// 	$http
-	// 		.get('/api/title')
-	// 		.then(({data: {title}}) => {
-	// 			$scope.title = title
-	// 		})
-	// })
 
 
 //////////showCtrl\\\\\\\\\\\\\

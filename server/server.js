@@ -2,7 +2,6 @@
 const {json} = require('body-parser')
 const express = require('express')
 const mongoose = require('mongoose')
-// const canvas = require('canvas')
 const {use} = require('browserify')
 
 
