@@ -1,9 +1,11 @@
 {
   "name": "drawingapp",
   "version": "1.0.0",
-  "engines": {"node": "6.7.0"},
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
+  "engines": {
+  "node": "6"
+   },
   "scripts": {
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
