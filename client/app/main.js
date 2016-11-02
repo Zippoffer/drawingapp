@@ -57,7 +57,8 @@ angular
 			        'Color',
 		    ],
 		    webStorage: 'local',
-		    droppable: true
+		    droppable: true,
+		    stretchImg: true
 
 			})
 
