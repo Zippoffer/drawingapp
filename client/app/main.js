@@ -56,7 +56,8 @@ angular
 			        'DrawingMode',
 			        'Color',
 		    ],
-		    webStorage: 'local'
+		    webStorage: 'local',
+		    droppable: true
 
 			})
 
