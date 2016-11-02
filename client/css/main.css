@@ -1,5 +1,7 @@
 body {
 	color: black;
+	padding-top: 3%;
+	background-color: black;
 }
 h1 {
 	text-align: center;
@@ -41,7 +43,8 @@ h1 {
 
 .container {
 	width: 1000px;
-	height: 100%;
+	/*height: 100%;*/
+	min-height: 600px;
 	background: url(/css/images/darkcanvas.jpg);
 	background-size: cover;
 	border: 3px solid black;
@@ -64,8 +67,8 @@ h1 {
 input {
 	/*margin-: -13%;*/
 	position: fixed;
-	top: 79px;
-	left: 399px;
+	top: 117px;
+	left: 404px;
 	background: url(/css/images/arrow-158359_1280.png);
 	background-size: cover;
 	height: 30px;
@@ -83,10 +86,61 @@ input {
 /*test*/
 .drawing-board-control-size-range-input {
 	position: relative;
-	left: 1px;
-	top: 130px;
+	left: 281px;
+	top: 120px;
+	max-width: 300px;
+
+}
+/*testing this is the range slider*/
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
 }
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #badca7;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+/*testing this is the range slider*/
 .drawing-board-control.drawing-board-control-navigation {
 	position: relative;
 	left: 29px;
