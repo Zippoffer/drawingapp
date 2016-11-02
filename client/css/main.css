@@ -1,0 +1,235 @@
+body {
+	color: black;
+	padding-top: 3%;
+	background-color: black;
+}
+h1 {
+	text-align: center;
+}
+
+.drawing-board-control-drawingmode-pencil-button {
+	background: url('/css/images/Pencil_icon.png');
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-drawingmode-eraser-button {
+	background: url(/css/images/2000px-Pink-eraser.svg.png);
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-drawingmode-filler-button {
+	background: url(/css/images/bucket-157513_960_720.png);
+	background-size: cover;
+	height: 22px;
+	width: 22px;
+}
+
+/*test*/
+
+.drawing-board-canvas-wrapper {
+	height: 100%;
+	width: 100%;
+}
+.drawing-board-canvas {
+	position: relative;
+	bottom: 50px;
+	height: 400px;
+	width: 1000px;
+}
+
+.container {
+	width: 1000px;
+	/*height: 100%;*/
+	min-height: 600px;
+	background: url(/css/images/darkcanvas.jpg);
+	background-size: cover;
+	border: 3px solid black;
+}
+.container.ng-scope {
+	max-width: 900px;
+	border: 3px solid black;
+}
+
+/*test*/
+
+.btn.btn-primary.ng-scope {
+	position: relative;
+	left: 82px;
+	margin-bottom: 6%;
+}
+
+
+/*test*/
+input {
+	/*margin-: -13%;*/
+	position: fixed;
+	top: 117px;
+	left: 404px;
+	background: url(/css/images/arrow-158359_1280.png);
+	background-size: cover;
+	height: 30px;
+	width: 30px;
+	border-radius: 200%;
+	text-rendering: unset;
+}
+/*test*/
+
+.ng-binding.ng-scope {
+	position: relative;
+	left: 30px;
+}
+
+/*test*/
+.drawing-board-control-size-range-input {
+	position: relative;
+	left: 281px;
+	top: 120px;
+	max-width: 300px;
+
+}
+/*testing this is the range slider*/
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #badca7;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+/*testing this is the range slider*/
+.drawing-board-control.drawing-board-control-navigation {
+	position: relative;
+	left: 29px;
+	bottom: 42px;
+}
+
+.drawing-board-control.drawing-board-control-drawingmode {
+	position: relative;
+	left: 122px;
+	bottom: 66px;
+}
+
+.drawing-board-control-colors-current{
+	position: relative;
+	bottom: 26px;
+	height: 22px;
+	width: 22px;
+	border: 1px solid red;
+}
+
+.drawing-board-control-inner {
+	position: relative;
+	bottom: 62px;
+}
+/*test*/
+
+
+.drawing-board-canvas {
+	margin-top: 3%;
+}
+
+
+.drawing-board-control-colors-rainbows.drawing-board-utils-hidden{
+	overflow: hidden;
+	display: none;
+	height: 22px;
+	width: 22px;
+}
+
+.drawing-board-control-colors-rainbow{
+	height: 30px;
+	width: 30px;
+	display: inline;
+}
+
+.drawing-board-control-colors-picker{
+	height: 22px;
+	width: 22px;
+	display: inline-block;
+}
+
+.btn.btn-danger {
+	position: relative;
+	left: 99px;
+	margin-bottom: 6%;
+	background: url(/css/images/delete-300x300.jpg);
+	background-size: cover;
+	height: 62px;
+	width: 62px;
+	border-radius: 200%;
+}
+
+/*test*/
+.btn.btn-primary.ng-scope {
+	position: fixed;
+	left: 600px;
+	top: 672px;
+	/*margin-top: 3%;*/
+	background: url(/css/images/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png);
+	background-size: cover;
+}
+.btn.btn-primary {
+		position: relative;
+	left: 400px;
+	top: 42px;
+	/*margin-top: 3%;*/
+	background: url(/css/images/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png);
+	background-size: cover;
+}
+/*test*/
+
+img {
+	margin-top: 6%;
+}
+
+.space {
+	height: 59px;
+}
+.rabbit {
+	color: #badca7;
+}
+
