@@ -75,6 +75,7 @@ input {
 	width: 30px;
 	border-radius: 200%;
 	text-rendering: unset;
+	cursor: copy;
 }
 /*test*/
 
@@ -170,6 +171,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .drawing-board-canvas {
 	margin-top: 3%;
+	cursor: crosshair;
 }
 
 
