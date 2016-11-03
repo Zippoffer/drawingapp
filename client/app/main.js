@@ -34,8 +34,6 @@ angular
 				$http
 				.post('/api/remove', {picId})
 				.then(() => $scope.pics.splice(index, 1))
-				console.log('picId',picId) 
-				console.log('index', index)   
 			}
  })
 ///////////showCtrl\\\\\\\\\\\\\\\
