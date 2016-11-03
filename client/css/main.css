@@ -66,7 +66,7 @@ h1 {
 /*test*/
 input {
 	/*margin-: -13%;*/
-	position: fixed;
+	position: absolute;
 	top: 117px;
 	left: 404px;
 	background: url(/css/images/arrow-158359_1280.png);
@@ -207,7 +207,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 /*test*/
 .btn.btn-primary.ng-scope {
-	position: fixed;
+	position: absolute;
 	left: 600px;
 	top: 672px;
 	/*margin-top: 3%;*/
@@ -217,7 +217,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .btn.btn-primary {
 		position: relative;
 	left: 400px;
-	top: 42px;
+	top: 12px;
 	/*margin-top: 3%;*/
 	background: url(/css/images/15792-illustration-of-a-blank-glossy-rectangular-button-pv.png);
 	background-size: cover;
