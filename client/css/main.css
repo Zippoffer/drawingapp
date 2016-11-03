@@ -69,10 +69,11 @@ h1 {
 input {
 	/*margin-: -13%;*/
 	position: absolute;
-	/*top: 117px;*/
-	top: 15%;
-	/*left: 404px;*/
-	left: 80%;
+	top: 117px;
+	/*top: 15%;*/
+	left: 404px;
+	/*left: 80%;*/
+	margin-left: 3%;
 	background: url(/css/images/arrow-158359_1280.png);
 	background-size: cover;
 	height: 30px;
